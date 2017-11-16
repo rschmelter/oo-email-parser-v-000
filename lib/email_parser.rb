@@ -11,7 +11,7 @@ end
 
   def parse
     emails = @emails
-    emails = emails.split(/[, ]/).delete_if{|i| i = " "}
+    emails = emails.split(/[, ]/)
     emails
   end
 
