@@ -9,9 +9,7 @@ class EmailParser
     @emails = emails
 end
 
-  def delete_duplicate
 
-  end
 
   def parse
     emails = @emails
