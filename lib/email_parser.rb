@@ -9,11 +9,15 @@ class EmailParser
     @emails = emails
 end
 
+  def delete_duplicate
+
+  end
+
   def parse
     emails = @emails
     emails = emails.split(/[, ]/)
     emails.delete_if {|i| i == ""}
-    emails
+    emails.uniq!
   end
 
 end
