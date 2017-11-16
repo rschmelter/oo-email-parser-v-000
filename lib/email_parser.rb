@@ -15,7 +15,7 @@ end
     emails = @emails
     emails = emails.split(/[, ]/)
     emails.delete_if {|i| i == ""}
-    emails
+    emails.uniq!
   end
 
 end
